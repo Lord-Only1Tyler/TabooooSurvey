@@ -190,13 +190,26 @@ text-align:center;
 justify-content:center
 }
 
+
 .highlighted-surveys .container .survey-box {
-padding:10px;
-margin:5px auto;
-background-color:#FF000090;
-border-radius:5px;
-height:500px
+background:#FF000090;
+padding:30px;
+margin:20px;
+box-shadow:0 3px 20px #FF000050;
+transition:all .3s ease-in-out;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+border-radius:5px
 }
+
+.highlighted-surveys .container .survey-box:hover {
+transform:translateY(-5px);
+box-shadow:0 3px 40px #FF000090
+}
+
+
 
 .highlighted-surveys .container .survey-box h3 {
 margin-bottom:5px;
@@ -230,11 +243,13 @@ font-weight:700
 footer {
 justify-content:center;
 margin-top:15px;
+margin-bottom:5px;
 text-align:center
 }
 
 footer .container {
 background-color:#FF0000A0;
+box-shadow:0 3px 20px #FF000090;
 max-width:100%!important;
 padding-top:10px;
 padding-bottom:10px;
